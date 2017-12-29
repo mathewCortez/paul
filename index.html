@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Paul Gabriellini</title>
+        <meta name="description" content="Paul Gabriellini Actor">
+<!--         Background pattern from Subtle Patterns-->
+<!--
+        The following backgrounds are in the website
+        Spiration Dark by Monika https://www.toptal.com/designers/subtlepatterns/spiration-dark/
+        Japanese Sayagata by Olga Libby https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
+        Fresh Snow by Kerstkaarten https://www.toptal.com/designers/subtlepatterns/fresh-snow/
+        Honey I'm Subtle by Alex M. Balling https://www.toptal.com/designers/subtlepatterns/page/15/
+        Pink rice by ExcogitoWeb https://www.toptal.com/designers/subtlepatterns/pink-rice/
+-->
+        <meta name="keywords" content="Actor Paul Gabriellini">
+        <meta name="author" content="Mathew Cortez">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link type="text/css" rel="stylesheet" href="w3css.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+       
+<!--
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+           
+            $(window).scroll(
+                {
+                    previousTop: 0
+                }, 
+                function () {
+                    var currentTop = $(window).scrollTop();
+                    if ($(window).width() < 550) {return;}
+                     else if (currentTop < this.previousTop) {
+                        $("#navigation").css("opacity", "0.75");
+                    } else {
+                        $("#navigation").css("opacity", "0");
+                    }
+                    this.previousTop = currentTop;
+                }
+                );
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing');
+                });
+            });
+
+            var elem = document.getElementById("navigation");
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 100) {                
+                    $("#navigation").css("backgroundColor","rgba(192,192,192, .7)");
+                }
+                else {
+                    $("#navigation").css("backgroundColor", "rgba(192,192,192, .0)");
+                }
+            });
+
+
+        </script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navigation");
+                if (x.style.display ===  "block") {
+                    x.style.display = "none";
+                    
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <a id="top" name="top"></a>
+    </head>
+    <body>
+        <script>
+            AOS.init();
+        </script>
+        		
+        <section class="front">
+            <section class="men" onclick="myFunction()">
+                <img src="img/Hamb.png" class="menu" >
+            </section>
+            <nav id="navigation">
+                <ul>
+                    <li class = "first"><a href="#top">Home</a></li>
+                    <li><a href="#aboutMeSection">My Work</a></li>
+                    
+                    <li><a href="#resumeSection">Resume</a></li>
+                    <li><a href="#headshots">Headshots</a></li>
+                    <li><a href = "#reel">Reel</a></li>
+                
+                </ul>
+            </nav>
+            <section class="name">
+                
+                <h2>Paul Gabriellini - Actor</h2>
+            </section>
+            <section class="email">
+                
+                <h2 class="em">Contact:<br/> 631-245-4698<br/> paulgabriellini37@gmail.com
+</h2>
+
+                
+            </section>
+        </section>
+        
+        <section class="about">
+            <a name="aboutMeSection" id="aboutMeSection"></a>
+            <h3>My Work</h3>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;">
+            <img src="img/paul.png" class="profile" alt="Profile picture" >
+            
+            <hr style="clear:both;margin-left:auto;margin-right:auto;width:30%;">
+            
+            <p class="detail" ><b>Name:</b> Paul Gabriellini &nbsp; | &nbsp; <b>E-mail:</b> paulgabriellini37@gmail.com
+&nbsp;  | &nbsp; <b>Phone:</b> 631-245-4698</p>
+            <p class="detail" ><b>Height:</b> 5'11" &nbsp; | &nbsp; <b>Weight:</b> 165 lbs&nbsp;  | &nbsp; <b>Eyes:</b> Brown&nbsp;  |&nbsp; <b>Hair:</b> Black&nbsp;  |&nbsp; <b>Vocal</b>: Baritone</p>
+
+            
+            <p class="me" >Paul Gabriellini was born on June 12, 1991 from Long Island, New York. He made his theatrical debut in 2007 in The Crucible. Since then he has graduated from Buffalo State College in 2013 with a B.A. in Theater. He has performed in a number of varying and wide range roles in such performances as Anything Goes (Whitney), Seven Keys to Baldpate (Max), Fuddy Meers (Richard), Julius Caesar (Antony), The Stepmother (Peter), Dames at Sea (Lucky), and several short and independent films including It Happens Fast. Paul has extensive experience in improvisation having performed in and coordinated Friday Night Live, a weekly 90 minute improvisation show hosted by Students of Buffalo State College Theater Department for three and a half years and then moving on to form Pity Applause, an improvisation based show that mixes pre-recorded film segments with live performance to create an immersive narrative experience. As a Co-producer and core performer of the show, Pity Applause has enjoyed a successful run for the past 3 years in the highly competitive Manhattan Area. Paul has also taught basic improvisation to the children of Making Fishers of Men and Women after school program and continues to teach improvisation techniques to students of all ages and experience. Paul has a great understanding in immersive theater, having designed and directed two annual haunted houses for the organization of Making Fishers and community, winning several awards and recognition's for introducing theater to Buffalo communities including Volunteer and Service Learning Center's Outstanding Community Service Work Study Student which is supported by The Research Foundation of S.U.N.Y. His work was then applied in working several years for Nyctophobia, a Long Island regional yet highly successful Haunted House turned promenade and immersive theater experience which earned great acclaim from several reviewers including the Huffington Post. With a self-taught understanding and passion for film and film history, Paul has been a member of the entertainment media channel Pretty Much It  in charge of the classic movie recommendations segment.  Although learned in several areas of performance, Paul's drive lies in his passion for cinema and continues to pursue a career in film acting.</p>
+            
+                
+            <h4>Appearances</h4>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;">
+            
+            <section class="work">
+                <section class="theater">
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/pity.jpg" alt="Pity Applause Image">
+                        <p>Pity Applause LIVE is a fast growing short form improvisation/variety show currently performing bi-weekly on Friday nights. Paul started this troupe, alongside his partner Eric Striffler Decemeber of 2013 strictly as an improv show but has developed into performances that consistently include live bands to open and written and planned material of any kind. Paul contributions to the shows are that of a producer, director, host, writer and performer of every show and although the workload is heavy he feels nothing but pride in having created something such as this show, out of nothing..</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Pity Applause</h7>
+                    </section>
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/anythinggoes.jpg" alt="Anything goes image">
+                        <p>Buffalo State Colleges Fall 2009 Production of "Anything Goes" directed by Proffesor Joseph Price. I was cast as the role of Whitney with an alternate take on the character, modeling him after Groucho Marx.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Anything Goes</h7>
+                    </section>
+                
+                   <section class="specific">
+                        
+                        <img class="workimgs" src="img/keyes.PNG" alt="Seven keys to baldpate image">
+                        <p>"Seven Keys to Baldpate" was the Buffalo State College spring production directed by Donn Youngstrom in the spring of 2010. I played the melodramatic sociopath Lou Max.</p>
+                       <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                       <h7>Seven Keys to Baldpate</h7>
+                    </section>
+                   <section class="specific">
+                        
+                        <img class="workimgs" src="img/orientation.PNG" alt="Buffalo state college orientation image">
+                        <p>Buffalo State Theater Department puts on a production for first year and transfer students where we, the cast, write and perform a show that expresses the rules, regulations and guidelines to the successful college experience in a comedic way using story-telling scenarios to make it interesting for an audience to engage in. I have been apart of this project for the 2010 and 2011 presenations</p>
+                       <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                       <h7>Buffalo State College Orientation Play</h7>
+                    </section>
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/fnl.PNG" alt="FNL image">
+                        <p>"Friday Night Live" is a free admittance, hour long improvisation show that is performed every friday on Buffalo State College campus during school semesters. It is completely student run and is an all student cast including myself.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>FNL</h7>
+                    </section>
+                    
+                </section>
+                <section class="theater">
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/water.PNG" alt="Untitled drops of water image">
+                        <p>Untitled Drops of Water premiered at the Second Annual Anne Frank Project in the Summer of 2010. The play was written and directed by a student Gabriella Moreno. All the cast played characters who embodied an emotion, I was indifference.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Untitled Drops of Water</h7>
+                    </section>
+                    <section class="specific" >
+                        
+                        <img class="workimgs" src="img/fuddy.PNG" alt="Fuddy meers image">
+                        <p>The Regional premier of Fuddy Meers at Buffalo State College in the fall of 2010 and was directed by Joseph Price. I was the father, Richard Fiffle. In this production I shaved back my hairline to get a balding effect.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Fuddy Meers</h7>
+                    </section>
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/music.PNG" alt="Incidental Music of Theatre image">
+                        <p>In the spring of 2010 the Buffalo Philaharmonia put on a musical scoring of several plays that were preceded by actors doing a informed reading on stage. I read for the parts of Egmont from "Egmont," Macheath from "Three Penny Opera" and Demetrius from "A Midsummer Nights Dream."</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Incidental Music of Theatre</h7>
+                    </section>
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/julius.PNG" alt="Julius Caesar image">
+                        <p>Buffalo State College and Director Drew Kahn's presentation of "Julius Caesar". Set to the year 2020 it shows a possibility of what the future may be in the style of Shakespeare with the idea of "women in power." All of the conspirators were played by women to create an edge to the piece and to intrigue the imagination of an audiences. I was cast as Marc Antony who is now the defender of a masculine rule.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Julius Caesar</h7>
+                    </section>
+                </section>
+                <section class="theater">
+                    <section class="specific">
+                        
+                        <img class="workimgs" src="img/im%20not%20leaving.PNG" alt="I'm not leaving image">
+                        <p>The World Premier of the stage adaptation of Carl Wilkens  book "I'm Not Leaving." All of the cast including myself play different ensemble parts and even sharing the role of Carl Wilkens to put him in your own shoes as he retells his story about the Rwandan genocide.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>I'm Not Leaving</h7>
+                    </section>
+                    <section class="specific second">
+                        
+                        <img class="workimgs" src="img/Underspoken%20Blaze.png" alt="Underspoken Blaze image">
+                        <p>Underspoken Blaze was performed at the third annual Anne Frank Project outside on the Buffalo State College Campus. The audience sat on the grass and watched directed/writer Gabriella Moreno's second Anne Frank Project. We each in the cast once again play human embodiments of emotions to showcase the extremes of emotion that one feels in times of despair. I embodied fear and portrayed the paralyzing effect that it has.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Underspoken Blaze</h7>
+                    </section>
+                    <section class="specific third">
+                        
+                        <img class="workimgs" src="img/the%20stepmother.PNG" alt="The Stepmother image">
+                        <p>The National Premier of Githa Sowerby's "The Stepmother" discovered and directed by Donn Youngstrom of Buffalo State College. I was cast as the role of Peter Holland in this melodramatic story of financial struggle</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>The Stepmother</h7>
+                    </section>
+                    <section class="specific third">
+                        
+                        <img class="workimgs" src="img/dames.jpg" alt="Dames At Sea">
+                        <p>In the fall of 2012 Buffalo State Theater put on Dames at Sea in Donald Savage Buildings Flexible theater. The space is quite intimate for a musical with tap dancers stepping right at your feet. Paul played the part of Lucky in one of director Carlos Jones' alternating casts. each week the principle cast would switch with the ensemble giving each actor two different roles.</p>
+                        <p><span class="border">&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></p>
+                        <h7>Dames At Sea</h7>
+                    </section>
+                </section>
+            </section>
+            
+        </section>
+        <section class="projects">
+            <a name="resumeSection" id="resumeSection"></a>
+            <h3 class="resume">Resume</h3>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;"><br/>
+            <table >
+                <caption>Film</caption>
+                <tr>
+                    <th>Title</th>
+                    <th>Character</th> 
+                    <th>Production</th>
+                </tr>
+                <tr>
+                    <td>Faux Bro</td>
+                    <td>Brother Paul</td>
+                    <td>Pity Applause</td>
+                </tr>
+                <tr>
+                    <td>Kiddy Applause</td>
+                    <td>Mr. Hardakillwalski</td>
+                    <td>Pity Applause</td>
+                </tr>
+                <tr>
+                    <td>Party Applause</td>
+                    <td>Paul</td>
+                    <td>Pity Applause</td>
+                </tr>
+                <tr>
+                    <td>Snow Bros Party Patrol</td>
+                    <td>Snow Bro</td>
+                    <td>LGA Food &amp; Shop (Promotional)</td>
+                </tr>
+                <tr>
+                    <td>It Happens Fast</td>
+                    <td>Inventor</td>
+                    <td>Existence Media</td>
+                </tr>
+                <tr>
+                    <td>The Long Way</td>
+                    <td>A New Yorker</td>
+                    <td>Existence Media</td>
+                </tr>
+                <tr>
+                    <td>The Stallion</td>
+                    <td>Major</td>
+                    <td>Travis Carlson Pictures</td>
+                </tr>
+            </table>
+            <table>
+                <caption>Theater</caption>
+                <tr>
+                    <th>Show</th>
+                    <th>Role</th> 
+                    <th>Director</th>
+                </tr>
+                <tr>
+                    <td>Anything Goes</td>
+                    <td>Elisha Whitney</td>
+                    <td>Hoseph Price</td>
+                </tr>
+                <tr>
+                    <td>Seven Keys to Baldpate</td>
+                    <td>Lou Max</td>
+                    <td>Donn Youngstrom</td>
+                </tr>              
+                <tr>
+                    <td>Fuddy Meers</td>
+                    <td>Richard Fiffle</td>
+                    <td>Joseph Price</td>
+                </tr>
+
+                <tr>
+                    <td>Julius Caesar</td>
+                    <td>Marc Antony</td>
+                    <td>Drew Kahn</td>
+                </tr>
+                <tr>
+                    <td>Dames At Sea</td>
+                    <td>Lucky</td>
+                    <td>Carlos Jones</td>
+                </tr>
+                <tr>
+                    <td>The Stepmother</td>
+                    <td>Peter Holland</td>
+                    <td>Donn Youngstrom</td>
+                </tr>
+               
+            </table>
+            <table>
+                <caption>Other Theater Works</caption>
+                <tr>
+                    <th>Show</th>
+                    <th>Role</th> 
+                    <th>Performance</th>
+                </tr>
+                <tr>
+                    <td>Nyctophobia</td>
+                    <td>Performer</td>
+                    <td>East End Dance Studio</td>
+                </tr>
+                <tr>
+                    <td>Friday Night Live 2010-2013</td>
+                    <td>Performer/Host</td>
+                    <td>Buggalo State College</td>
+                </tr>
+                <tr>
+                    <td>Underspoken Blaze</td>
+                    <td>Fear</td>
+                    <td>The Anne Frank Project</td>
+                </tr>
+                <tr>
+                    <td>Pity Applause Live</td>
+                    <td>Performer/Host</td>
+                    <td>The Kraine Theater</td>
+                </tr>
+                <tr>
+                    <td>Buffalo State College Orientation Play 2010-2012</td>
+                    <td>Performer</td>
+                    <td>Buffalo State College</td>
+                </tr>
+                <tr>
+                    <td>Untitled Drops of Water</td>
+                    <td>Indifference</td>
+                    <td>The Anne Frank Project</td>
+                </tr>
+                <tr>
+                    <td>Incidental Music of Theater</td>
+                    <td>Performer</td>
+                    <td>Buffalo Philharmonic Opera</td>
+                </tr>
+            </table>
+            <table>
+                <caption>Training</caption>
+                <tr>
+                    <th>Class name?</th>
+                    <th>Location</th> 
+                    <th>Teacher</th>
+                </tr>
+                <tr>
+                    <td>Improv</td>
+                    <td>Buffalo?</td>
+                    <td>Person name</td>
+                </tr>
+            </table>
+            <h4 class="sk">Skills</h4>
+
+            <p class="skills">Camera Technique, Commedia Del’ Arte, Fencing, Improvisation, Film and Film History, Partner Dancing, Stage Combat, Stand-up Comedy, Tap Dancing (3 years), Teaching Improvisation: games &amp; exercises (Making Fishers of Men and Women), Hosting, God Mic.</p>
+        </section>
+        <section class="headshot"> 
+            <h4 class="hea">Headshots</h4>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;">
+
+            <a name="headshots" id="headshots"></a>
+            <section class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="img/paul1.jpg">
+                <img class="mySlides" src="img/paul2.jpg">
+                <img class="mySlides" src="img/paul3.jpg">
+                <img class="mySlides" src="img/paul4.jpg">
+                <img class="mySlides" src="img/paul5.jpg">
+                <img class="mySlides" src="img/paul6.jpg">
+                <img class="mySlides" src="img/paul7.jpg">
+                <img class="mySlides" src="img/paul8.jpg">
+                <img class="mySlides" src="img/paul10.jpg">
+                <img class="mySlides" src="img/paul11.jpg">
+                <img class="mySlides" src="img/paul12.jpg">
+                <section class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:80%">
+                    <section class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</section>
+                    <section class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</section>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+                </section>
+            </section>
+        </section>
+        <section class = "reel">
+            <a name="reel" id="reel"></a>
+            <h4 class="edu">Reel</h4>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;">
+
+            <div class="fluidMedia">
+                <iframe width="70%" src="https://www.youtube.com/embed/42XyPVRdQuE" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            <div class="fluidMedia">
+                <iframe width="70%" src="https://www.youtube.com/embed/RO3jjg93_Aw" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            <div class="fluidMedia">
+                <iframe width="70%"  src="https://www.youtube.com/embed/lU7ItqG8IsI" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            <div class="fluidMedia">
+                <iframe width="70%"  src="https://www.youtube.com/embed/994Wf81fANY" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            <div class="fluidMedia">
+                <iframe width="70%"  src="https://www.youtube.com/embed/VyHEUeyXdcY" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            <div class="fluidMedia">
+                <iframe width="70%"  src="https://www.youtube.com/embed/aq8E9YR9wyw" frameborder="0" gesture="media" allow="encrypted-media" align="middle" allowfullscreen></iframe>
+            </div>
+            
+            
+            
+
+        </section>  
+        <script>
+           var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " w3-white";
+            }      
+        </script> 
+        <footer>&copy; 2017 - Mathew Cortez</footer>
+        
+    </body>
+</html>
