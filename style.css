@@ -208,13 +208,11 @@ td {
    height: 90vh;
 }
 .mySlides {
-
     height: 100%;
     max-height: 700px;
     display:none;
     margin: 0 auto;
     overflow: hidden;
-
 }
 .w3-left, .w3-right, .w3-badge {
     cursor: pointer;
@@ -236,8 +234,7 @@ td {
 }
 
 .myImages {
-    margin:0 auto;
-    
+    margin:0 auto;   
     height: 100%;
     display:none;
     overflow: hidden;
@@ -250,12 +247,8 @@ td {
     padding-bottom: 20px;
     max-width: 20%;
     min-width: 200px;
-    margin: 0 auto;
-
-    
+    margin: 0 auto; 
 }
-
-
 
 hr { 
   height: 30px; 
@@ -384,6 +377,9 @@ footer {
     height: 100%;
 
 }
+    .galleryBox {
+        height: 70vh;
+    }
     
 
 }
@@ -461,7 +457,11 @@ footer {
 }
 
 
-
+@media only screen and (max-width: 650px) {
+    .galleryBox {
+        height: 50vh;
+    }
+}
 
 @media only screen and (max-width: 550px) {
 
@@ -469,6 +469,7 @@ footer {
         margin-left: 20%;
         margin-right: 20%;
     }
+    
 }
 
 
