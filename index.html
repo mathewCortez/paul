@@ -17,15 +17,16 @@
         <meta name="author" content="Mathew Cortez">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link type="text/css" rel="stylesheet" href="bootstrap.css">
         <link type="text/css" rel="stylesheet" href="w3css.css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-       
+
 <!--
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+        <script type="text/javascript" src="bootstrap.min.js"></script>
         <script>
            
             $(window).scroll(
@@ -43,6 +44,15 @@
                     this.previousTop = currentTop;
                 }
                 );
+            $(document).ready(function () {
+                $('img').on('click', function () {
+                    var image = $(this).attr('src');
+                    //alert(image);
+                    $('#myModal').on('show.bs.modal', function () {
+                        $(".showimage").attr("src", image);
+                    });
+                });
+            });
             $(document).ready(function(){
                 $('a[href^="#"]').on('click',function (e) {
                     e.preventDefault();
@@ -82,9 +92,7 @@
         <a id="top" name="top"></a>
     </head>
     <body>
-        <script>
-            AOS.init();
-        </script>
+
         		
         <section class="front">
             <section class="men" onclick="myFunction()">
@@ -389,17 +397,17 @@
 
             <a name="headshots" id="headshots"></a>
             <section class="w3-content w3-display-container" style="max-width:800px">
-                <img class="mySlides" src="img/paul1.jpg">
-                <img class="mySlides" src="img/paul2.jpg">
-                <img class="mySlides" src="img/paul3.jpg">
-                <img class="mySlides" src="img/paul4.jpg">
-                <img class="mySlides" src="img/paul5.jpg">
-                <img class="mySlides" src="img/paul6.jpg">
-                <img class="mySlides" src="img/paul7.jpg">
-                <img class="mySlides" src="img/paul8.jpg">
-                <img class="mySlides" src="img/paul10.jpg">
-                <img class="mySlides" src="img/paul11.jpg">
-                <img class="mySlides" src="img/paul12.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul1.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul2.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul3.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul4.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul5.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul6.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul7.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul8.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul10.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul11.jpg">
+                <img data-toggle="modal" data-target="#myModal" class="mySlides" src="img/paul12.jpg">
                 <section class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:55%">
                     <section class="w3-left w3-hover-text-khaki" onclick="plusDivs1(-1)">&#10094;</section>
                     <section class="w3-right w3-hover-text-khaki" onclick="plusDivs1(1)">&#10095;</section>
@@ -416,32 +424,44 @@
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv1(11)"></span>
                 </section>
             </section>
-            <a name="headshots" id="headshots"></a>
+            
+            <section id="myModal" class="modal fade" role="dialog">
+                <section class="modal-dialog">
+                    <section class="modal-content">
+                        <section class="modal-body">
+                            <img class="showimage img-responsive" src="" />
+                        </section>
+                        <section class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
             <section class="galleryBox">
                 <section class="w3-content w3-display-container diffSize">
-                        <img class="myImages" src="img/paul13.jpg">
-                        <img class="myImages" src="img/paul14.jpg">
-                        <img class="myImages" src="img/paul15.jpg">
-                        <img class="myImages" src="img/paul16.jpg">
-                        <img class="myImages" src="img/paul17.jpg">
-                        <img class="myImages" src="img/paul18.jpg">
-                        <img class="myImages" src="img/paul19.jpg">
-                        <img class="myImages" src="img/paul20.jpg">
-                        <img class="myImages" src="img/paul21.jpg">
-                        <img class="myImages" src="img/paul22.jpg">
-                        <img class="myImages" src="img/paul23.jpg">
-                        <img class="myImages" src="img/paul24.jpg">
-                        <img class="myImages" src="img/paul25.jpg">
-                        <img class="myImages" src="img/paul26.jpg">
-                        <img class="myImages" src="img/paul27.jpg">
-                        <img class="myImages" src="img/paul28.jpg">
-                        <img class="myImages" src="img/paul29.jpg">
-                        <img class="myImages" src="img/paul30.jpg">
-                        <img class="myImages" src="img/paul31.jpg">
-                        <img class="myImages" src="img/paul32.jpg">
-                        <img class="myImages" src="img/paul33.jpg">
-                        <img class="myImages" src="img/paul34.jpg">
-                        <img class="myImages" src="img/paul35.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul13.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul14.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul15.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul16.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul17.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul18.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul19.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul20.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul21.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul22.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul23.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul24.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul25.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul26.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul27.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul28.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul29.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul30.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul31.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul32.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul33.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul34.jpg">
+                        <img data-toggle="modal" data-target="#myModal" class="myImages" src="img/paul35.jpg">
                         <section class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:80%">
                             <section class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</section>
                             <section class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</section>
